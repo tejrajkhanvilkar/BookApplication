@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="10dp"
+    >
+
+
+
+<RelativeLayout
+    android:id="@+id/contetlayout"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:padding="5dp"
+   >
+
+
+
+    <ImageView
+        android:id="@+id/imgBookImage"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/bookappicon"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+
+    <TextView
+        android:id="@+id/txtBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Item"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imgBookImage"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        android:layout_toRightOf="@id/imgBookImage"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="215dp"/>
+
+    <TextView
+        android:id="@+id/txtBookRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.5"
+        android:textColor="#ffca28"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/imgBookImage"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of the Author"
+        android:layout_toRightOf="@id/imgBookImage"
+        android:layout_below="@id/txtBookName"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtBookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 299"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/imgBookImage"
+        android:layout_below="@id/txtBookName"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
